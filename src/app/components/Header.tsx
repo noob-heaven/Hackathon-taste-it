@@ -5,9 +5,9 @@ export default function header() {
   return (
     <div>
       <div>
-        <Link href={'/pages/user/login'}>로그인</Link>
+        <Link href={'/user/login'}>로그인</Link>
       </div>
-      <Link href={'/pages/user/join'}>회원가입</Link>
+      <Link href={'/user/join'}>회원가입</Link>
     </div>
   )
 }
