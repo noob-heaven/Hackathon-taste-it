@@ -20,7 +20,7 @@ export default function RootLayout({
     <StyledComponentsRegistry>
       <html lang="ko">
         <body>
-          <Header />
+          {/* <Header /> */}
           {children}
         </body>
       </html>

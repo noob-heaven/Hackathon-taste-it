@@ -1,7 +1,17 @@
+'use client'
+
 import React from 'react'
+import styled from 'styled-components'
+
+const Contianer = styled.div`
+  background-color: black;
+`;
 
 export default function Board() {
   return (
-    <div>게시판 페이지</div>
+    <Contianer>
+      음..
+
+    </Contianer>
   )
 }
