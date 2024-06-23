@@ -13,7 +13,6 @@ const ShowcaseItemBox = styled.div`
 
 const ItemImageWrapper = styled.div`
   position: relative;
-  width: 99%;
   height: 60%;
   border-radius: 1.25rem;
   overflow: hidden;
