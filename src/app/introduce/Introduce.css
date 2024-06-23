@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&display=swap");
+
+.Introduce_title {
+    color: #333;
+    padding: 20px;
+  }
+
+  nav {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+
+  .introduce-container1 {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #D9D9D9;
+  }
+  
+  .center-content {
+    font-family: 'Buda', sans-serif;
+    font-size: 3rem;
+  }
+
+  .introduce-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .box {
+    width: 652px;
+    height: 473px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-right: 50px;
+  }
+  .group-container {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: #D9D9D9;
+  }
+  
+  .group {
+    width: 490px;
+    height: 230px;
+    background-color: #FFFFFF;
+  }
+  
+
+  .tec-text {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .tec-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+  }
+  
+  .tec-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tec-box {
+    width: 190px;
+    height: 190px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+
+    /* font-style */
+    .font_Nanum {font-family: 'Nanum Gothic', sans-serif;}
+    .font_Buda {font-family: 'Buda', sans-serif;}
+    /* font-size */
+    .fs30{font-size: 30px;}
+    .fs40{font-size: 40px;}
+    .fs50{font-size: 50px;}
+    .fs60{font-size: 60px;}
+    .fs80{font-size: 80px;}
+    /* font-weight */
+    .fw300{font-weight: 300;}
+    .fw400{font-weight: 400;}
+    .fw500{font-weight: 500;}
+    .fw600{font-weight: 600;}
+    /* text-align */
+  .taC{text-align: center;}
+  .taL{text-align: left;}
+  .taR{text-align: right;}
+    /* grid-column */
+    .gc1 {grid-column:1;}
+    .gc2 {grid-column:2;}
+    .gc3 {grid-column:3;}
+  
