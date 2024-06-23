@@ -13,9 +13,8 @@ const ShowcaseItemBox = styled.div`
 
 const ItemImageWrapper = styled.div`
   position: relative;
-  width: 100%;
+  width: 99%;
   height: 60%;
-  margin: 0.3125rem;
   border-radius: 1.25rem;
   overflow: hidden;
 `;
@@ -26,7 +25,7 @@ const ItemDateWrapper = styled.div`
 const ItemNameWrapper = styled.div`
   font-size: 1.25rem;
   font-weight: 700;
-  margin-top: 0.325rem;
+  margin-top: 0.375rem;
 `;
 
 const ItemDescriptionWrapper = styled.div`
