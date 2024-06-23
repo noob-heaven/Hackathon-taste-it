@@ -18,6 +18,31 @@ const ImageWrapper = styled.div`
   position:relative;
 `;
 
+const OverlayWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+`;
+
+const OverlayTitle = styled.div`
+  font-size: 3.125rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+`;
+
+const OverlaySubTitle = styled.p`
+  margin: 1.5rem auto;
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-align: center;
+`;
+
+const titleText = 'IT 융합기술로 미래를 향한 도전';
+const titleSubText = '끊임없는 IT혁신과 열정으로 새로운 미래를 만듭니다';
+
 export default function Background() {
   return (
     <BackgroundWrapper>
@@ -29,6 +54,14 @@ export default function Background() {
           priority
         />
       </ImageWrapper>
+      <OverlayWrapper>
+        <OverlayTitle>
+          {titleText}
+        </OverlayTitle>
+        <OverlaySubTitle>
+          {titleSubText}
+        </OverlaySubTitle>
+      </OverlayWrapper>
     </BackgroundWrapper>
   )
 }

@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
 
 const GappedStart = styled.div`
   margin-top: 928px;
+padding-top: 3.25rem;
   width: 100vw;
   align-items: center;
 `
