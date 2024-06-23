@@ -5,6 +5,7 @@ import Background from '@components/service/Background';
 import Footer from '@components/service/Footer';
 import Showcase from '../components/service/Showcase';
 import { ShowcaseItemProps } from '../components/service/types/showcase';
+import HorizontalDivider from '../components/service/HorizontalDivider';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -16,13 +17,11 @@ const GlobalStyle = createGlobalStyle`
 
 const GappedStart = styled.div`
   margin-top: 928px;
-  height: 100vh;
   width: 100vw;
   align-items: center;
 `
 
 const ServiceWrapper = styled.div`
-  height: 100%;
 `;
 
 const InnerBody = styled.div`
@@ -73,7 +72,234 @@ const showcaseTech: ShowcaseItemProps[] = [
     desc: 'AI 학습용 얼굴 인식 데이터 가공',
     tag: 'Image Process, Facial Landmark Detection',
   },
-]
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+];
+const showcaseWebnApp: ShowcaseItemProps[] = [
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+];
+
+const showcaseData: ShowcaseItemProps[] = [
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Date Processing_02 / 2021',
+    name: '얼굴 이미지 데이터 가공',
+    desc: 'AI 학습용 얼굴 인식 데이터 가공',
+    tag: 'Image Process, Facial Landmark Detection',
+  },
+];
+
+const showcaseDesign: ShowcaseItemProps[] = [
+  {
+    img: '/images/service/placeholder.jpg',
+    date: 'Data Processing_01 / 2021',
+    name: '태양광 발전량 RTU 데이터 가공',
+    desc: '태양광 발전소 RTU 실시간 데이터 시계열 가공',
+    tag: 'Data Process, Serial Data Processing'
+  },
+];
+
+  
 
 export default function Service() {
   return (
@@ -83,7 +309,16 @@ export default function Service() {
         <ServiceWrapper>
           <Background></Background>
           <GappedStart>
-            <Showcase title="Showcase" showcaseItems={showcaseTech} />
+            <Showcase title="Tech" showcaseItems={showcaseTech} />
+            <HorizontalDivider />
+
+            <Showcase title="Web & App" showcaseItems={showcaseWebnApp} />
+            <HorizontalDivider />
+
+            <Showcase title="Data" showcaseItems={showcaseData} />
+            <HorizontalDivider />
+
+            <Showcase title="Design" showcaseItems={showcaseDesign} />
           </GappedStart>
         </ServiceWrapper>
         <Footer />

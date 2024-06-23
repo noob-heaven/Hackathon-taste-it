@@ -17,7 +17,8 @@ const ShowcaseWrapper = styled.div`
 `
 
 const ShowcaseHeader = styled.div`
-  font-size: 50px;
+  margin-left: 1.2rem;
+  font-size: 2.25rem;
   font-weight: 700;
 `;
 
@@ -29,8 +30,13 @@ const ShowcaseInnerBody = styled.section`
   overflow-y: hidden;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 // NOTE: 네모 박스로 아이템을 감싸는 박스임
@@ -50,6 +56,7 @@ const ShowcaseItemGrid = styled.div`
   width: 100%;
   height: 100%;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1.25rem;
 `;
 
@@ -78,7 +85,7 @@ export default function Showcase(props: ShowcaseProps) {
       <ShowcaseInnerBody>
       {
         itemGrids.map((gridList, gridIndex) => (
-          <ShowcaseItemWrapper>
+          <ShowcaseItemWrapper key={`showcase_${gridIndex}`}>
             <ShowcaseItemGrid key={gridIndex}>
             {
               gridList.map((item, itemIndex) => (

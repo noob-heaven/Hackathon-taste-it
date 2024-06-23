@@ -2,12 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HorizontalDividerDiv = styled.div`
-  padding: 0.625rem 1.125px;
   gap: 0.625rem;
 
   width: 100vw;
-  height: 0.32rem;
-  top: 1831px;
+  height: 0.225rem;
 
   background: linear-gradient(89.8deg, #4B91FA 0.09%, #1C2CBE 99.74%);
   border: 1px solid #000000;
@@ -15,5 +13,5 @@ const HorizontalDividerDiv = styled.div`
 `;
 
 export default function HorizontalDivider() {
-    <HorizontalDividerDiv />
+    return(<HorizontalDividerDiv />);
 }
