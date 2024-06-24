@@ -2,6 +2,8 @@
 
 import styled from 'styled-components';
 import { InputValue } from '../user/join/style';
+import * as CONSTANT from '@lib/constant';
+import { useState } from 'react';
 
 
 export const QATextAreaValue  = 
@@ -140,27 +142,16 @@ export const PrivacyModal = styled.div`
 
 
 export default function QA() {
+  // const [formDate, setFormData] = useState();
 
-    
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>)=>{
       e.preventDefault();
-      console.log(tel, email);
-      
-      const response = await fetch(CONSTANT.FetchAddress, {
-        method: 'POST',
-        headers: {
-          ...CONSTANT.FetchHeaders,
-        },
-      })
-      .then((x) => x.json());
-      
-      console.log(response);
   }
-
-  const onChange = (e: OnChangeValueType) => {
+  
+    
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const { name, value } = e.target;
-
-  }
+      }
 
   return (
     <QAWapper>
@@ -196,8 +187,20 @@ export default function QA() {
               </SubjectBox>
               <SubjectBox>
                 <QASubject>02. 문의할 프로젝트 대략적인 예산과 기간을 알려주세요.</QASubject>
-                예산<InputValue />
-                기간<InputValue />
+                예산<InputValue 
+                  type="text"
+                  id="text"
+                  name="예산"
+                  onChange={onChange}
+                  required
+                  placeholder='예산'/>
+                기간<InputValue 
+                 type="text"
+                  id="text"
+                  name="period"
+                  onChange={onChange}
+                  required
+                  placeholder='기간'/>
               </SubjectBox>
               <SubjectBox>
                 <QASubject>03. 문의할 프로젝트의 선정방식을 선택해 주세요.</QASubject>
@@ -205,7 +208,10 @@ export default function QA() {
               <SubjectBox>
                 <QASubject>
                   <QAScript>04. 문의하고 싶은 내용에 대해 자세히 알려주세요.</QAScript>
-                  <QATextArea defaultValue={QATextAreaValue} />
+                  <QATextArea
+                    defaultValue={QATextAreaValue}
+                    name="body"
+                   />
                 </QASubject>
               </SubjectBox>
               <SubjectBox>
